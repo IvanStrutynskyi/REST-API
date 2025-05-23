@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-from app.schemas import BookSchema
-from app.storage import get_all_books, get_book_by_id, add_book, delete_book
+from .schemas import BookSchema
+from .storage import get_all_books, get_book_by_id, add_book, delete_book
 
 app = Flask(__name__)
 book_schema = BookSchema()
